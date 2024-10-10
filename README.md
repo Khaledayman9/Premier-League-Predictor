@@ -54,6 +54,8 @@ pip install -r requirements.txt
 | Burnley                   | -0.71          |
 | Brighton and Hove Albion  | 0.68           |
 
+
+
 **Points Prediction:**
 - **Mean Absolute Error (MAE):** 3.27e-14
 - **R² Score:** 1.00
@@ -78,10 +80,20 @@ pip install -r requirements.txt
 | West Bromwich Albion      | 0.97           |
 | Bournemouth               | -0.80          |
 
+
+
+
+
 **Points Prediction:**
 - **Mean Absolute Error (MAE):** 9.21
 - **R² Score:** 0.91
 - **Cross-Validated MAE:** 11.55
+
+---
+
+## Top 5 Team with Highest Residuals
+
+![Residuals](https://github.com/user-attachments/assets/7cf33f55-c9f1-4fe4-8c7a-a240abba803a)
 
 ---
 
@@ -96,6 +108,11 @@ pip install -r requirements.txt
 | Manchester United         | 4           | 4.42                     | 134                        |
 | Chelsea                   | 5           | 5.42                     | 130                        |
 
+![Rank](https://github.com/user-attachments/assets/14ab5034-fbda-4b13-afd4-7ff293ef7da6)
+
+![Points](https://github.com/user-attachments/assets/00330bb6-d0b0-4219-bed9-5ad198468abc)
+
+
 ### Random Forest Predictions:
 | Team                      | Actual Rank | Predicted Rank (RF)     | Predicted Points (RF)     |
 |---------------------------|-------------|--------------------------|----------------------------|
@@ -104,6 +121,10 @@ pip install -r requirements.txt
 | Arsenal                   | 3           | 3.40                     | 146                        |
 | Manchester United         | 4           | 4.65                     | 131                        |
 | Chelsea                   | 5           | 5.01                     | 129                        |
+
+![Points 2](https://github.com/user-attachments/assets/c70e6580-b06b-41f4-beca-5715379befdb)
+
+![Rank 2](https://github.com/user-attachments/assets/f334d885-0dd8-4b54-a9a3-56b52675c8ee)
 
 ---
 The results indicate that both models perform well in predicting the ranks of the teams, with Linear Regression showing a slightly higher R² score for rank prediction, while Random Forest excels in points prediction. The residual analysis provides insights into the accuracy of each model's predictions for different teams, highlighting areas where the models may require improvement.
