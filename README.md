@@ -32,6 +32,82 @@ cd Premier-League-Predictor
 pip install -r requirements.txt
 ```
 
+# Results
+## Linear Regression
+
+**Rank Prediction:**
+- **Mean Absolute Error (MAE):** 0.93
+- **R² Score:** 0.94
+- **Cross-Validated MAE:** 1.15
+
+**Residuals for Rank:**
+| Team                      | Rank Residuals |
+|---------------------------|----------------|
+| Manchester City           | 3.24           |
+| West Bromwich Albion      | 1.46           |
+| Nottingham Forest         | 0.91           |
+| Leicester City            | -0.84          |
+| Arsenal                   | 0.80           |
+| Bournemouth               | -0.80          |
+| Fulham                    | -0.74          |
+| Brentford                 | -0.73          |
+| Burnley                   | -0.71          |
+| Brighton and Hove Albion  | 0.68           |
+
+**Points Prediction:**
+- **Mean Absolute Error (MAE):** 3.27e-14
+- **R² Score:** 1.00
+- **Cross-Validated MAE:** 9.52e-15
+
+---
+
+## Random Forest
+
+**Rank Prediction:**
+- **Mean Absolute Error (MAE):** 1.10
+- **R² Score:** 0.96
+- **Cross-Validated MAE:** 2.37
+
+**Residuals for Rank:**
+| Team                      | Rank Residuals |
+|---------------------------|----------------|
+| Manchester City           | -1.98          |
+| Southampton               | -1.14          |
+| Leeds United              | 1.09           |
+| Everton                   | -1.05          |
+| West Bromwich Albion      | 0.97           |
+| Bournemouth               | -0.80          |
+
+**Points Prediction:**
+- **Mean Absolute Error (MAE):** 9.21
+- **R² Score:** 0.91
+- **Cross-Validated MAE:** 11.55
+
+---
+
+## Predictions
+
+### Linear Regression Predictions:
+| Team                      | Actual Rank | Predicted Rank (Linear) | Predicted Points (Linear) |
+|---------------------------|-------------|--------------------------|----------------------------|
+| Manchester City           | 1           | -2.24                    | 177                        |
+| Liverpool                 | 2           | 1.96                     | 151                        |
+| Arsenal                   | 3           | 2.20                     | 150                        |
+| Manchester United         | 4           | 4.42                     | 134                        |
+| Chelsea                   | 5           | 5.42                     | 130                        |
+
+### Random Forest Predictions:
+| Team                      | Actual Rank | Predicted Rank (RF)     | Predicted Points (RF)     |
+|---------------------------|-------------|--------------------------|----------------------------|
+| Manchester City           | 1           | 2.98                     | 147                        |
+| Liverpool                 | 2           | 2.65                     | 148                        |
+| Arsenal                   | 3           | 3.40                     | 146                        |
+| Manchester United         | 4           | 4.65                     | 131                        |
+| Chelsea                   | 5           | 5.01                     | 129                        |
+
+---
+The results indicate that both models perform well in predicting the ranks of the teams, with Linear Regression showing a slightly higher R² score for rank prediction, while Random Forest excels in points prediction. The residual analysis provides insights into the accuracy of each model's predictions for different teams, highlighting areas where the models may require improvement.
+
 # Usage
 After setting up the environment, you can run the Jupyter Notebook provided to execute the analysis and view the results.
 
