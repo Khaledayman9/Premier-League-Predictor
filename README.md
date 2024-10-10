@@ -113,3 +113,9 @@ After setting up the environment, you can run the Jupyter Notebook provided to e
 
 # Conclusion
 This model provides insights into the predictive capabilities of regression techniques in sports analytics. By understanding team performance metrics, stakeholders can make informed decisions regarding team strategies, player acquisitions, and more.
+
+
+# Technologies
+- Kaggle Notebook
+- Python
+- Scikit-learn
