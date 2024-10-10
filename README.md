@@ -112,7 +112,6 @@ pip install -r requirements.txt
 
 ![Points](https://github.com/user-attachments/assets/00330bb6-d0b0-4219-bed9-5ad198468abc)
 
-
 ### Random Forest Predictions:
 | Team                      | Actual Rank | Predicted Rank (RF)     | Predicted Points (RF)     |
 |---------------------------|-------------|--------------------------|----------------------------|
@@ -122,9 +121,9 @@ pip install -r requirements.txt
 | Manchester United         | 4           | 4.65                     | 131                        |
 | Chelsea                   | 5           | 5.01                     | 129                        |
 
-![Points 2](https://github.com/user-attachments/assets/c70e6580-b06b-41f4-beca-5715379befdb)
-
 ![Rank 2](https://github.com/user-attachments/assets/f334d885-0dd8-4b54-a9a3-56b52675c8ee)
+
+![Points 2](https://github.com/user-attachments/assets/c70e6580-b06b-41f4-beca-5715379befdb)
 
 ---
 The results indicate that both models perform well in predicting the ranks of the teams, with Linear Regression showing a slightly higher R² score for rank prediction, while Random Forest excels in points prediction. The residual analysis provides insights into the accuracy of each model's predictions for different teams, highlighting areas where the models may require improvement.
