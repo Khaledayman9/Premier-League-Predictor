@@ -26,7 +26,7 @@ A predictive modeling project aimed at forecasting the ranks and points of footb
 [^1]: [Premier League Season 2024](https://www.kaggle.com/datasets/abdelrahmanemad594/premier-league-season-2024)
 
 # Installation
-```cmds
+```bash
 git clone https://github.com/Khaledayman9/Premier-League-Predictor.git
 cd Premier-League-Predictor
 pip install -r requirements.txt
