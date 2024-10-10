@@ -111,6 +111,5 @@ The results indicate that both models perform well in predicting the ranks of th
 # Usage
 After setting up the environment, you can run the Jupyter Notebook provided to execute the analysis and view the results.
 
-
 # Conclusion
 This model provides insights into the predictive capabilities of regression techniques in sports analytics. By understanding team performance metrics, stakeholders can make informed decisions regarding team strategies, player acquisitions, and more.
